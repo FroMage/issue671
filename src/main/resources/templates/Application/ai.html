@@ -1,0 +1,14 @@
+{#include main.html}
+{#title}Welcome{/title}
+
+<div class="page__container notFullWidth">
+	{#form uri:Application.ai() method="GET"}
+		<input name="topics" placeholder="List of topics"/>
+	{/form}
+	{#if results}
+		Results: {results}
+	{/if}
+</div>
+ 
+
+{/include}
